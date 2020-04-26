@@ -5,15 +5,33 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md"]
 highlighter: rouge
 
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
-#
-title : Personal Site
-author :
+title: Kanchana Ranasinghe's Blog
+email: kahnchana@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  I love mathematics, python programming, poetry, and dancing.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://github.com/kahnchana/personal_page" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  kahnchana
+
+#Author
+author:
   name : Kanchana Ranasinghe
-  email : kahnchana@gmail.com
-  github : kahnchana
-  twitter : kahnchana
+  email: kahnchana@gmail.com
+
+#Social Media
+minima:
+  social_links:
+    facebook: kahnchana
+    github : kahnchana
+    stackoverflow : kahnchana
+    linkedin : kahnchana
+    youtube_channel: UCcdZ5g_hnSj3I_YRrWF7baA
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
 
 # NOTE: Replacing this next line with your own URL
 production_url : https://github.com/kahnchana/personal_page
@@ -25,8 +43,6 @@ markdown: kramdown
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
-  version : 0.3.0
-
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
   # however this value will be dynamically changed depending on your deployment situation.
